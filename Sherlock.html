@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var balance =10500;
+    var cameraOn = true;
+
+    function steal(balance, amount){
+    console.log(balance)
+    cameraOn = false;
+    if(amount < balance){
+    balance = balance - amount;
+    }
+    return amount;
+    cameraOn= true;
+    }
+
+    var amount = steal(balance, 1250);
+    alert("Du er kriminel og du har lige stjålet " + amount +" og det må man ikke!!!!");
+</script>
+</html>

@@ -1,0 +1,28 @@
+Hej Watson,
+Nu skal jeg prøve at forklare hvorfor det ikke vil virke, altså så godt som jeg kan. ;P
+
+balance variable fra linje 1 vil aldrig ændre sig.
+som du kan se i function Steal, står der at balance skal minuses med den amount som bliver taget. 
+men det bliver det aldrig, fordi den ændre ikke balance udenfor function.
+så pengende forsvinder aldrig.
+
+--------------------------------------------------------------------------------------------
+    var balance =10500;
+    var cameraOn = true;
+
+    function steal(balance, amount){
+    cameraOn = false;
+    if(amount < balance){
+    balance = balance - amount;
+    }
+    return amount;
+    cameraOn= true;
+    }
+
+    var amount = steal(balance, 1250);
+    alert("Du er kriminel og du har lige stjålet " + amount +" og det må man ikke!!!!");
+--------------------------------------------------------------------------------------------
+
+plus efter første steal vil camara altid være false.
+
+PS. Hold nu op det svært at forklarre med tekst.
