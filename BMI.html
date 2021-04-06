@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <p>Højde</p>
+    <input value="160" id="height" type="number"> CM
+    <p>Vægt</p>
+    <input value="70" id="weight" type="number"> KG
+    <br>
+    <button onclick="CalBMI()">Udregn</button>
+    <p>Svar: <span id="Result"></span></p>
+</body>
+<script>
+    let height, weigt;
+
+
+    function CalBMI() {
+        height = document.getElementById("height").value;
+        weight = document.getElementById("weight").value;
+
+        height /= 100;
+
+        let BMI = (weight / (height * height));
+        BMI = BMI.toFixed(1);
+        document.getElementById("Result").innerText = BMI + " " + Group(BMI)
+    }
+
+    function Group(BMI) {
+
+        if (BMI > 16 && BMI < 18.5) {
+            return "Body weight deficit";
+        }
+        else if (BMI > 18.5 && BMI < 24) {
+            return "Norm";
+        }
+        else if (BMI > 24 && BMI < 30) {
+            return "Weight over";
+        }
+        else if (BMI > 30 && BMI < 35) {
+            return "Obesity first degree";
+        }
+        else if (BMI > 35 && BMI < 40) {
+            return "Obesity second degree";
+        }
+        else if (BMI > 40) {
+            return "Obesity third degree";
+        }
+        else {
+            return "Null";
+        }
+    }
+</script>
+</html>
