@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    background-color: tan;
+    font-family: sans-serif;
+}
+
+section h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+
+.TextBox {
+    background-color: white;
+    height: 50%;
+    max-width: 500px;
+    width: 50%;
+    display: block;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 1px 1px black;
+}
+
+#MessageBox {
+    height: 600px;
+    overflow: auto;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.message .time {
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.message p {
+    margin: 0;
+    padding: 5px 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    overflow-wrap: break-word;
+}
+
+/* input box design */
+input[type=text] {
+    width: 90%;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#button {
+    width: 90%;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+/*Footer design*/
+footer {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Scroll design */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}
