@@ -45,7 +45,7 @@ function scrolldown() {
 // create messege element in html
 function createMessage(name, message, date) {
     let element = document.getElementById("MessageBox");
-    element.innerHTML += "<article class=\"message\"><span class=\"time\">" + date + "</span><p><span>" + name +"</span>: <span>" + message + "</span></p></article>"
+    element.innerHTML += "<article class=\"message\"><span class=\"time\">" + date + "</span><p><span>" + name +"</span>: " + message + "</p></article>"
 }
 
 button.addEventListener("click", clickEnterMessage, false);

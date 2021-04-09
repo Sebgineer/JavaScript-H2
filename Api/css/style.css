@@ -47,6 +47,10 @@ section h1 {
     overflow-wrap: break-word;
 }
 
+.message p span {
+    font-weight: 600;
+}
+
 /* input box design */
 input[type=text] {
     width: 90%;
